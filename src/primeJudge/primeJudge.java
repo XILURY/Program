@@ -1,4 +1,5 @@
-
+//weiwan
+package primeJudge;
 public class primeJudge {
     public static void main(String[] arg){
         int n =0;
