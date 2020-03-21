@@ -14,7 +14,7 @@ public class DivisorsAndMultiples {
     static int Divisors(int m, int n){ //最大公因数
         int smaller = Math.min(m, n);
         int CoNumber = 0;
-        for(int i=2;i<=smaller;i++){ //循环 寻找最大的被两数都整除的数 即为最大公因数 特别注意等号 后来才发发现错误
+        for(int i=2;i<=smaller;i++){ //循环 寻找最大的被两数都整除的数 即为最大公因数 特别注意等号 后来才发现错误
             if(m%i==0 && n%i==0){
                 CoNumber = i;
             }
