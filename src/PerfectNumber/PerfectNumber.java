@@ -4,7 +4,7 @@
 package PerfectNumber;
 public class PerfectNumber {
     public static void main(String[] arg){
-        int m = 1000000000;
+        int m = 1000;
         for(int i=1;i<m;i++){
             if(i == Count(i))
                 System.out.println(i);
