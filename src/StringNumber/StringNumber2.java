@@ -1,7 +1,8 @@
-package StringNumber;/*
-* 参考答案给出了一种不同的方法 matches() 字符串和字符数组的关系及转换toCharArray()
-* *关注下其实现的方法
-* */
+/** 参考答案给出了一种不同的方法 matches() 字符串和字符数组的关系及转换toCharArray()
+ * *关注下其实现的方法
+ * */
+
+package StringNumber;
 import java.util.Scanner;
 
 public class StringNumber2  {
