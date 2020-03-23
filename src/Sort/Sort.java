@@ -14,7 +14,7 @@ public class Sort {
         int x = in.nextInt();
         int y = in.nextInt();
         int z = in.nextInt();
-        int a[] = {x,y,z}; //数组初始化的方式 把三个数填到数组里面
+        int a[] = {x,y,z}; //数组初始化的方式 把三个数填到数组里面 数组用{}括起来不是[]
         Arrays.sort(a); //对数组元素快速排序 从小到大
         System.out.println(Arrays.toString(a)); //不能直接输出数组 通过toString实现 输出[x,y,z]
         System.out.print("三个数字从小到大排列为：");
