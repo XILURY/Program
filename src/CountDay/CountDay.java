@@ -2,6 +2,7 @@
  *程序分析：以3月5日为例，应该先把前两个月的加起来，然后再加上5天即本年的第几天，特殊情况，闰年且输入月份大于3时需考虑多加一天。
  *参考答案过于复杂 其实可以直接用LocalDate类的方法getDayOfYear实现
  */
+package CountDay;
 import java.time.LocalDate;
 import java.util.Scanner;
 
