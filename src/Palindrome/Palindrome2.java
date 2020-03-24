@@ -1,4 +1,4 @@
-//参考答案
+//参考答案 BufferedReader及异常的使用
 package Palindrome;
 import java.io.*;
 public class Palindrome2{
