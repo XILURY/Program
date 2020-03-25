@@ -12,7 +12,7 @@ public class MatrixSum {
         for(int i = 0; i<3;i++){
             for(int j=0;j<3;j++){
                 if(i==j){
-                    System.out.println(a[i][j]);
+                    //System.out.println(a[i][j]); //输出对角元素
                     sum = sum +a[i][j];
                 }
             }
