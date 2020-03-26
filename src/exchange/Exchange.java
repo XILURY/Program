@@ -20,6 +20,10 @@ public class Exchange {
         int[] b = new int[m];
         for(int i=0;i<m;i++)
             b[i] = a[i];
+        // 测试移动5位
+        int n = 5;
+        System.out.println("原始数组为："+Arrays.toString(b));
+        exchange(b,n);
         ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!玄学了 不知道为什么错了 运行不了 明明一样（可算找到了 微笑脸）
 //        System.out.print("请输入一组数字：");
 //        Scanner in= new Scanner(System.in).useDelimiter("\\s");
@@ -33,10 +37,6 @@ public class Exchange {
 //        for(int i=0;i<m;i++)
 //            na[i] = a[i];
 // /////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
-        // 测试 移动5位！
-        int n = 5;
-        System.out.println("原始数组为："+Arrays.toString(b));
-        exchange(b,n);
     }
     static void exchange(int[] a,int n){
         int len = a.length+n;
