@@ -1,6 +1,6 @@
 /*四位数加密算法
 *故意做复杂了 复习数字转字符串转字符数组转整型的方法
-* Integer.parseInt(String.valueOf(c))
+* Integer.parseInt(String.valueOf(c)) 字符转整型
  */
 package  EncryptionAlgorithm;
 import java.util.Scanner;
