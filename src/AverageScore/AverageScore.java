@@ -1,11 +1,15 @@
 /*version1 通过类的方法 实现学生总分的计算 熟悉类的和对象的使用
 *version2 创建一个方法计算各科平均分
+* version3 输出到文件 PrintWriter
 * */
 package  AverageScore;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class AverageScore {
-    public static void main(String[] arg){
+    public static void main(String[] arg) throws IOException {
         Student[] ss = new Student[5];
         ss[0] = new Student("ZZ", 1, 95, 88 , 92);
         ss[1] = new Student("XX", 2, 79, 75 , 68);
@@ -24,11 +28,21 @@ public class AverageScore {
             gra3[i] = ss[i].getGrade3();
             total[i] = ss[i].total();
         }
-        System.out.println("科目1平均分为："+average(gra1));
-        System.out.println("科目2平均分为："+average(gra2));
-        System.out.println("科目3平均分为："+average(gra3));
-
+//        System.out.println("科目1平均分为："+average(gra1));
+//        System.out.println("科目2平均分为："+average(gra2));
+//        System.out.println("科目3平均分为："+average(gra3));
+        PrintWriter outtxt = new PrintWriter("myfile.txt", "UTF-8") ;
+        outtxt.println("学号"+"  姓名"+"  科目1"+"    科目2"+"    科目3"+"     总分");
+        for(int i=0;i<5;i++){
+            outtxt.println(" "+ss[i].getStudentID()+"       "+ss[i].getName()+"     "+ss[i].getGrade1()+"     "+
+                    ss[i].getGrade2()+"     "+ss[i].getGrade3()+"       "+total[i]);
+        }
+        outtxt.println("科目1平均分为："+average(gra1));
+        outtxt.println("科目2平均分为："+average(gra2));
+        outtxt.println("科目3平均分为："+average(gra3));
+        outtxt.close(); //一定要有close()否则输出的txt是空白的
     }
+
     // 计算每科平均分的方法
     static double average(Double[] gra){
         double sum = 0;
@@ -40,6 +54,7 @@ public class AverageScore {
         return avar;
         }
 }
+
 // 创建学生类
 class Student{
     private String name;
