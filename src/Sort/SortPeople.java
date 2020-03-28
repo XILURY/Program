@@ -1,5 +1,5 @@
 /*排序问题 有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。
-*
+* 没啥思路 不知道怎么下手 看看答案是如何做的
 */
 package Sort;
 
@@ -13,7 +13,7 @@ public class SortPeople {
         //定义数组变量标识某人是否还在圈内
         boolean[] isIn = new boolean[n];
         for(int i=0;i<isIn.length;i++)
-            isIn[i] = true;
+            isIn[i] = true;  //初始时 大家都是在圈内 所有都是true
         //定义圈内人数、报数、索引
         int inCount = n;
         int countNum = 0;
@@ -28,6 +28,7 @@ public class SortPeople {
                 }
             }
             index++;
+            // 淘汰人之后重新开始索引
             if(index==n)
                 index = 0;
         }
