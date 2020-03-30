@@ -1,8 +1,8 @@
-import java.util.Arrays;
-
 /*打印出杨辉三角形（要求打印出10行如下图）
 * 不知道它的规律 难以下手 规律是下面的一个数是上一行相邻的两数之和
 */
+package YHtriangle;
+
 public class YHtriangle {
     public static void main(String[] args){
         int[][] n = new int[10][21];
