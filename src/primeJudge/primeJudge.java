@@ -7,9 +7,10 @@
 package primeJudge;
 public class primeJudge {
     public static void main(String[] arg){
+        long start = System.currentTimeMillis() ;
         int number =0;
         int m = 0;
-        int n = 100000;
+        int n = 2000000;
         for(int i = m;i < n+1; i++){
             if(Judgement(i)){
                 number++;
@@ -20,7 +21,10 @@ public class primeJudge {
             }
         }
         System.out.println();
-        System.out.println(m+"和"+n+"间的素数个数为："+number);
+        //System.out.println(m+"和"+n+"间的素数个数为："+number);
+        long end = System.currentTimeMillis() ;
+        System.out.println(number + " primes");
+        System.out.println((end - start) + " milliseconds");
     }
     private static boolean Judgement(int i){
         boolean flag = false;
