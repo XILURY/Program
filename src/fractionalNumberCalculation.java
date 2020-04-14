@@ -1,5 +1,5 @@
 /*分数的加减乘除 相对来说也不是很难
-*但是没有考虑负分数
+*但是没有考虑负分数 程序的实现还是有点问题的
 *
 */
 public class fractionalNumberCalculation {
